@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafaf8">
+  <title>Bazil — Selected work · Design preview</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="projects.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Bazil home"><span class="brand-mark" aria-hidden="true">✳</span> bazil<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#" id="work-link" aria-current="page">Work<span class="nav-dot" aria-hidden="true"></span></a>
+      <button data-dialog="about">About</button>
+      <button data-dialog="contact" class="contact-link">Let’s talk <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="gallery-view">
+      <div class="intro">
+        <h1>Form. Light.<br><span>Motion.</span><span class="hero-asterisk" aria-hidden="true">✳</span></h1>
+        <div class="intro-note"><p>A space for images, films,<br>and the ideas in between.</p><a href="#selected-work">Explore the collection <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <section class="collection" aria-labelledby="collection-title" id="selected-work">
+        <div class="collection-toolbar">
+          <h2 id="collection-title">Selected work <span id="work-count" aria-live="polite">16</span></h2>
+          <div class="filters" role="group" aria-label="Filter work">
+            <button class="active" data-filter="all" aria-pressed="true">All work</button>
+            <button data-filter="still" aria-pressed="false">Stills</button>
+            <button data-filter="motion" aria-pressed="false">Motion</button>
+          </div>
+        </div>
+        <p class="preview-note"><span aria-hidden="true"></span>Product imagery, material studies, and things in motion.</p>
+        <div class="gallery" id="gallery"></div>
+        <p class="collection-end">A few frames. A whole world of possibilities.</p>
+      </section>
+      <section class="instagram-section" aria-labelledby="instagram-title">
+        <div class="instagram-heading"><div><h2 id="instagram-title">From Instagram</h2><p>Selected frames from my feed.</p></div><a href="https://www.instagram.com/the_bazilism/" target="_blank" rel="noopener noreferrer">@the_bazilism ↗</a></div>
+        <div class="instagram-grid">
+          <a href="https://www.instagram.com/the_bazilism/reel/DG0s14St3iz/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram/lip-colour.webp" width="360" height="640" loading="lazy" alt="Suspended lip colour products from Bazil’s Instagram"><span>Lip colour study <small>View post ↗</small></span></a>
+          <a href="https://www.instagram.com/the_bazilism/reel/DLf35HozOzY/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram/soft-matter.webp" width="512" height="640" loading="lazy" alt="Yellow-green animated form from Bazil’s Instagram"><span>Soft matter <small>View post ↗</small></span></a>
+          <a href="https://www.instagram.com/the_bazilism/reel/DMaBMrapdpI/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram/vida-new-york.webp" width="361" height="640" loading="lazy" alt="VIDA New York product against a red background from Bazil’s Instagram"><span>VIDA New York <small>View post ↗</small></span></a>
+        </div>
+      </section>
+    </section>
+    <article id="project-view" hidden></article>
+  </main>
+
+  <footer>
+    <div class="footer-top"><p>Have something<br>in mind?</p><button data-dialog="contact">Let’s make it happen <span aria-hidden="true">↗</span></button></div>
+    <div class="footer-bottom"><span>bazil.</span><a href="https://www.instagram.com/the_bazilism/" target="_blank" rel="noopener noreferrer">@the_bazilism ↗</a><a href="#" id="back-top">Back to top ↑</a></div>
+  </footer>
+
+  <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close dialog">×</button><span class="dialog-kicker">Bazil / CGI artist</span><h2 id="dialog-title"></h2><p id="dialog-body"></p><a class="dialog-instagram" href="https://www.instagram.com/the_bazilism/" target="_blank" rel="noopener noreferrer">@the_bazilism ↗</a><button class="dialog-done">Back to exploring</button></dialog>
+  <div class="preview-badge"><span></span> Design concept <b>01</b></div>
+  <dialog id="image-dialog" aria-label="Full image"><button class="dialog-close" aria-label="Close full image">×</button><img id="full-image" alt=""></dialog>
+</body>
+</html>

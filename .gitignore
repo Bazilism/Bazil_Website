@@ -1,0 +1,11 @@
+# Local review material and source-preparation records
+review/
+__pycache__/
+inspect_media.py
+prepare_portfolio.py
+portfolio-file-map.csv
+check.cjs
+assets/portfolio-reel/
+node_modules/
+.DS_Store
+Thumbs.db
